@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <div class="admin-container">
+        <h2>Admin Panel</h2>
+
+        <!-- Basic Login -->
+        <div id="loginSection" class="admin-login">
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <button id="loginButton">Login</button>
+            <p id="loginError" style="color: red; margin-top: 0.5rem;"></p>
+        </div>
+
+        <!-- Admin Content (Hidden initially) -->
+        <div id="adminContent">
+            <h3>Add New Movie/Series</h3>
+            <form id="addMovieForm" class="admin-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+
+                <label for="posterUrl">Poster URL (or path like assets/images/new.jpg):</label>
+                <input type="url" id="posterUrl" required>
+
+                <label for="releaseDate">Release Date:</label>
+                <input type="date" id="releaseDate">
+
+                <label for="language">Languages (comma-separated):</label>
+                <input type="text" id="language" placeholder="e.g., Hindi, English">
+
+                <label for="imdbRating">IMDb Rating (e.g., 7.5):</label>
+                <input type="number" step="0.1" id="imdbRating">
+
+                <label for="description">Description:</label>
+                <textarea id="description" rows="4"></textarea>
+
+                <label for="genres">Genres (comma-separated):</label>
+                <input type="text" id="genres" placeholder="e.g., Action, Thriller">
+
+                <label for="platform">Platform (e.g., Netflix, Cinema):</label>
+                <input type="text" id="platform">
+
+                <label for="categories">Categories (comma-separated, lowercase, match buttons):</label>
+                <input type="text" id="categories" placeholder="e.g., hindi, bollywood, trending" required>
+
+                <label for="link480p">Download Link (480p):</label>
+                <input type="url" id="link480p">
+                <label for="link720p">Download Link (720p):</label>
+                <input type="url" id="link720p">
+                <label for="link1080p">Download Link (1080p):</label>
+                <input type="url" id="link1080p">
+                <label for="link4k">Download Link (4K):</label>
+                <input type="url" id="link4k">
+
+                <button type="submit">Add/Update Movie</button>
+                <input type="hidden" id="editId"> <!-- Hidden field to store ID when editing -->
+            </form>
+
+            <div id="editArea">
+                 <h3>Edit/Delete Existing Movies</h3>
+                 <ul id="movieList">
+                     <!-- List of movies for editing/deleting will appear here -->
+                 </ul>
+            </div>
+
+            <hr style="margin: 2rem 0;">
+
+            <h3>Generated JSON Data (Manual Update Required!)</h3>
+            <p style="color: yellow; font-weight: bold;">
+                IMPORTANT: Copy the entire content below and paste it into your `movies.json` file.
+                Then commit and push the changes to GitHub.
+             </p>
+            <textarea id="outputJson" rows="15" style="width: 100%; background-color: #111; color: #eee; font-family: monospace;" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+  </html>
