@@ -1,0 +1,39 @@
+[
+  {
+    "id": "unique-movie-id-1", // Unique identifier
+    "title": "Example Movie Title",
+    "posterUrl": "assets/images/poster1.jpg", // Or direct URL: "https://image.tmdb.org/..."
+    "releaseDate": "2023-10-27",
+    "language": ["Hindi", "English"],
+    "imdbRating": "7.5",
+    "description": "A short description of the movie goes here. Lorem ipsum dolor sit amet.",
+    "genres": ["Action", "Thriller", "Bollywood"],
+    "platform": "Netflix", // Or "Cinema", "Amazon Prime", etc.
+    "categories": ["hindi", "bollywood", "netflix", "trending"], // Match data-category values (lowercase)
+    "downloads": {
+      "480p": "YOUR_DIRECT_DOWNLOAD_LINK_480p",
+      "720p": "YOUR_DIRECT_DOWNLOAD_LINK_720p",
+      "1080p": "YOUR_DIRECT_DOWNLOAD_LINK_1080p",
+      "4k": "YOUR_DIRECT_DOWNLOAD_LINK_4k"
+    },
+    "downloadCount": 1234 // Fake counter (optional)
+  },
+  {
+    "id": "another-web-series-2",
+    "title": "Example Web Series",
+    "posterUrl": "assets/images/poster2.jpg",
+    "releaseDate": "2023-09-15",
+    "language": ["English"],
+    "imdbRating": "8.8",
+    "description": "An amazing web series description.",
+    "genres": ["Sci-Fi", "Drama"],
+    "platform": "Amazon Prime",
+    "categories": ["english", "amazon", "trending"],
+    "downloads": {
+      "720p": "YOUR_DIRECT_DOWNLOAD_LINK_720p",
+      "1080p": "YOUR_DIRECT_DOWNLOAD_LINK_1080p"
+    },
+    "downloadCount": 5678
+  }
+  // Add more movie/series objects here
+    ]
