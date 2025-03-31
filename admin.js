@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- !! INSECURE HARDCODED PASSWORD !! ---
-    // --- Replace 'YourSecretPassword123' ---
+    // --- Replace 'miss' ---
     const CORRECT_PASSWORD = 'miss'; // CHANGE THIS!
 
     const loginSection = document.getElementById('loginSection');
