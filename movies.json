@@ -37,3 +37,32 @@
   }
   // Add more movie/series objects here
     ]
+[
+  {
+    "id": "entry-1743428148905-c71ba37784009",
+    "title": "Promised.Hearts.2025.720p.NF.WEB-DL.AAC5.1.AV1-PrimeFix.mkv",
+    "posterUrl": "https://vifix.site/gdflix/Um8mLYHGjb",
+    "tag": "WEB",
+    "releaseDate": "Mar 28",
+    "shortDetails": "720p",
+    "fullDescription": "Promised.Hearts.2025.720p.NF.WEB-DL.AAC5.1.AV1-PrimeFix.mkv",
+    "language": [
+      "Hindi English"
+    ],
+    "imdbRating": "7.6",
+    "genres": [
+      "Action"
+    ],
+    "platform": "Netflix",
+    "categories": [
+      "hollywood"
+    ],
+    "downloads": {
+      "480p": "https://vifix.site/gdflix/Um8mLYHGjb",
+      "720p": "https://vifix.site/gdflix/Um8mLYHGjb",
+      "1080p": "https://vifix.site/gdflix/Um8mLYHGjb",
+      "4k": "https://vifix.site/gdflix/Um8mLYHGjb"
+    },
+    "downloadCount": 1234
+  }
+      ]
