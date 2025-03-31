@@ -1,53 +1,14 @@
 [
   {
-    "id": "unique-movie-id-1", // Unique identifier
-    "title": "Example Movie Title",
-    "posterUrl": "assets/images/poster1.jpg", // Or direct URL: "https://image.tmdb.org/..."
-    "releaseDate": "2023-10-27",
-    "language": ["Hindi", "English"],
-    "imdbRating": "7.5",
-    "description": "A short description of the movie goes here. Lorem ipsum dolor sit amet.",
-    "genres": ["Action", "Thriller", "Bollywood"],
-    "platform": "Netflix", // Or "Cinema", "Amazon Prime", etc.
-    "categories": ["hindi", "bollywood", "netflix", "trending"], // Match data-category values (lowercase)
-    "downloads": {
-      "480p": "YOUR_DIRECT_DOWNLOAD_LINK_480p",
-      "720p": "YOUR_DIRECT_DOWNLOAD_LINK_720p",
-      "1080p": "YOUR_DIRECT_DOWNLOAD_LINK_1080p",
-      "4k": "YOUR_DIRECT_DOWNLOAD_LINK_4k"
-    },
-    "downloadCount": 1234 // Fake counter (optional)
-  },
-  {
-    "id": "another-web-series-2",
-    "title": "Example Web Series",
-    "posterUrl": "assets/images/poster2.jpg",
-    "releaseDate": "2023-09-15",
-    "language": ["English"],
-    "imdbRating": "8.8",
-    "description": "An amazing web series description.",
-    "genres": ["Sci-Fi", "Drama"],
-    "platform": "Amazon Prime",
-    "categories": ["english", "amazon", "trending"],
-    "downloads": {
-      "720p": "YOUR_DIRECT_DOWNLOAD_LINK_720p",
-      "1080p": "YOUR_DIRECT_DOWNLOAD_LINK_1080p"
-    },
-    "downloadCount": 5678
-  }
-  // Add more movie/series objects here
-    ]
-[
-  {
-    "id": "entry-1743428148905-c71ba37784009",
-    "title": "Promised.Hearts.2025.720p.NF.WEB-DL.AAC5.1.AV1-PrimeFix.mkv",
-    "posterUrl": "https://vifix.site/gdflix/Um8mLYHGjb",
+    "id": "entry-1743428552923-a407450641431",
+    "title": "Promised.Hearts.2025",
+    "posterUrl": "https://www.imdb.com/title/tt31107212",
     "tag": "WEB",
-    "releaseDate": "Mar 28",
-    "shortDetails": "720p",
+    "releaseDate": "Mar 31",
+    "shortDetails": "480p 720p 1080p",
     "fullDescription": "Promised.Hearts.2025.720p.NF.WEB-DL.AAC5.1.AV1-PrimeFix.mkv",
     "language": [
-      "Hindi English"
+      "English"
     ],
     "imdbRating": "7.6",
     "genres": [
@@ -65,4 +26,4 @@
     },
     "downloadCount": 1234
   }
-      ]
+]
