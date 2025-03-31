@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Movie Site Name</title>
+    <meta name="description" content="Find the latest movies and web series."> <!-- SEO -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Add SEO meta tags as needed -->
+</head>
+<body class="dark-theme"> <!-- Add dark-theme class -->
+
+    <header>
+        <h1>Your Site Name</h1>
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search movies or series...">
+        </div>
+        <nav class="category-filters">
+            <button class="category-button all active" data-category="all">All</button>
+            <button class="category-button green" data-category="hindi">Hindi Movies</button>
+            <button class="category-button yellow" data-category="bollywood">Bollywood (New)</button>
+            <button class="category-button red" data-category="18plus">18+ Desi Junction</button>
+            <a href="YOUR_TELEGRAM_LINK" target="_blank" class="category-button blue">Join Telegram</a>
+            <button class="category-button red" data-category="trending">Trending</button>
+            <button class="category-button orange" data-category="anime">Anime</button>
+            <button class="category-button pink" data-category="kdrama">K-Drama</button>
+            <button class="category-button red" data-category="amazon">Amazon Prime</button>
+            <button class="category-button orange" data-category="netflix">Netflix</button>
+            <button class="category-button pink" data-category="english">English</button>
+            <!-- Add more categories as needed -->
+        </nav>
+    </header>
+
+    <main>
+        <div id="movieGrid" class="movie-grid">
+            <!-- Movie items will be loaded here by JavaScript -->
+            <p>Loading movies...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Your Site Name. Disclaimer: We do not host any files.</p>
+        <!-- Link to Admin Panel (optional) -->
+        <a href="admin.html" style="font-size: 0.8em; color: #555;">Admin</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
