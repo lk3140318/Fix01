@@ -3,23 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegamovies30 Style Site</title> <!-- Update Title -->
-    <meta name="description" content="Download latest movies and web series."> <!-- SEO -->
+    <title>Vegamovies30 Style Site</title>
+    <meta name="description" content="Download latest movies and web series directly.">
     <link rel="stylesheet" href="style.css">
-    <!-- Add other SEO meta tags if needed -->
 </head>
 <body class="dark-theme">
 
     <header class="main-header">
         <div class="container header-content">
-            <div class="logo">VEGAMOVIES30 CLONE</div> <!-- Your Site Name/Logo -->
-            <nav class="top-nav">
-                <!-- Optional: Add top nav links like in the screenshot if desired -->
-                <!-- <a href="#">FEATURED</a>
-                <a href="#">GENRE</a>
-                <a href="#">BY YEAR</a>
-                <a href="#">BY QUALITIES</a> -->
-            </nav>
+            <div class="logo">YOUR SITE NAME</div> <!-- अपना नाम डालें -->
+            <!-- टॉप नेविगेशन हटा दिया गया है -->
         </div>
     </header>
 
@@ -31,42 +24,42 @@
             </div>
 
             <nav class="category-filters">
-                <!-- Top Row -->
-                <button class="category-button active" data-category="all">All</button> <!-- Add 'All' button -->
+                <!-- कैटेगरी बटन यहाँ रहेंगे -->
+                <button class="category-button active" data-category="all">All</button>
                 <button class="category-button green" data-category="hindi">Hindi Movies</button>
                 <button class="category-button yellow" data-category="bollywood">Bollywood (New)</button>
                 <button class="category-button red" data-category="18plus">18+ Desi Junction</button>
                 <a href="YOUR_TELEGRAM_LINK" target="_blank" class="category-button blue">Join Telegram</a>
-                 <!-- Bottom Row -->
                 <button class="category-button red" data-category="trending">Trending</button>
                 <button class="category-button orange" data-category="anime">Anime</button>
-                <button class="category-button pink" data-category="kdrama">K-Drama</button> <!-- Using pink from original req -->
-                <button class="category-button red" data-category="amazon">AMZN Prime</button> <!-- Adjusted text -->
+                <button class="category-button pink" data-category="kdrama">K-Drama</button>
+                <button class="category-button red" data-category="amazon">AMZN Prime</button>
                 <button class="category-button orange" data-category="netflix">Netflix</button>
-                <button class="category-button pink" data-category="english">English</button> <!-- Using pink from original req -->
-                <!-- Add more categories as needed, matching data-category in movies.json -->
+                <button class="category-button pink" data-category="english">English</button>
+                <!-- Add more categories as needed -->
             </nav>
         </div>
     </section>
 
     <main class="container">
+        <!-- मूवी ग्रिड अब डिटेल्स और डाउनलोड बटन दिखाएगा -->
         <div id="movieGrid" class="movie-grid">
-            <!-- Movie items will be loaded here by JavaScript -->
             <p class="loading-message">Loading movies...</p>
         </div>
 
         <div id="pagination" class="pagination">
-            <!-- Pagination buttons will be generated here -->
+            <!-- Pagination यहाँ बनेगा -->
         </div>
     </main>
 
     <footer>
         <div class="container">
-             <p>© 2023 Your Site Name. Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+             <p>© 2024 Your Site Name. Disclaimer: ...</p>
              <a href="admin.html" style="font-size: 0.8em; color: #555; margin-top: 5px; display: inline-block;">Admin Access</a>
         </div>
     </footer>
 
+    <!-- सिर्फ script.js की जरूरत है, movie-details.js हटा दें -->
     <script src="script.js"></script>
 </body>
-                    </html>
+    </html>
