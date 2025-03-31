@@ -1,0 +1,284 @@
+/* Basic Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Dark Theme Variables */
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --card-bg: #2a2a2a;
+    --card-border: #444;
+    --accent-color: #007bff; /* Example: Blue */
+    --button-hover-glow: 0 0 15px rgba(0, 123, 255, 0.7); /* Glow for blue button */
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--card-border);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.search-container {
+    margin-bottom: 1rem;
+}
+
+#searchBox {
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid var(--card-border);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 4px;
+}
+
+/* Category Filters */
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-button, .category-filters a.category-button { /* Style links like buttons */
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 20px; /* Pill shape */
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none; /* For the link button */
+    display: inline-block; /* For the link button */
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.category-button:hover, .category-filters a.category-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Button Colors (Match Vegamovies30 Style) */
+.category-button.all { background-color: #6c757d; } /* Grey for All */
+.category-button.green { background-color: #28a745; }
+.category-button.yellow { background-color: #ffc107; color: #333; }
+.category-button.red { background-color: #dc3545; }
+.category-button.blue { background-color: #007bff; }
+.category-button.orange { background-color: #fd7e14; }
+.category-button.pink { background-color: #e83e8c; }
+/* Add more colors */
+
+/* Active Category Button */
+.category-button.active {
+    box-shadow: 0 0 10px 2px currentColor; /* Use button's color for glow */
+    /* Or a simpler border: */
+    /* border: 2px solid var(--text-color); */
+}
+
+/* Movie Grid */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Responsive grid */
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.movie-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+.movie-item:hover {
+    transform: scale(1.03);
+}
+
+.movie-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/3; /* Maintain poster aspect ratio */
+    object-fit: cover;
+    display: block;
+}
+
+.movie-item h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.view-details-btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.8rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+}
+.view-details-btn:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9em;
+    color: #aaa;
+    border-top: 1px solid var(--card-border);
+}
+
+/* --- Movie Details Page Styles --- */
+.movie-details-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Default stack vertically */
+    gap: 1.5rem;
+}
+
+.movie-details-container img.details-poster {
+    max-width: 250px; /* Limit poster size */
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto; /* Center poster */
+}
+
+.movie-info {
+    flex-grow: 1;
+}
+.movie-info h2 { margin-bottom: 0.5rem; }
+.movie-info p { margin-bottom: 0.5rem; }
+.movie-info strong { color: #bbb; }
+
+.download-section h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.download-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.download-btn, .copy-link-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+.download-btn:hover, .copy-link-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    /* Glowing Animation */
+    box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.6); /* Blue glow */
+}
+.copy-link-btn {
+    background-color: #17a2b8; /* Teal */
+}
+.copy-link-btn:hover {
+    background-color: #117a8b;
+    box-shadow: 0 0 15px 5px rgba(23, 162, 184, 0.6); /* Teal glow */
+}
+.download-counter {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+
+/* --- Admin Panel Styles --- */
+.admin-container {
+     max-width: 700px; margin: 2rem auto; padding: 2rem; background-color: var(--card-bg); border-radius: 8px;
+}
+.admin-container h2 { text-align: center; margin-bottom: 1.5rem; }
+.admin-form label, .admin-login label { display: block; margin-bottom: 0.5rem; font-weight: bold; }
+.admin-form input[type=text],
+.admin-form input[type=url],
+.admin-form input[type=date],
+.admin-form input[type=number],
+.admin-form textarea,
+.admin-login input[type=password] {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--card-border);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 4px;
+}
+.admin-form textarea { resize: vertical; min-height: 100px; }
+.admin-form button, .admin-login button {
+    padding: 0.8rem 1.5rem; background-color: var(--accent-color); color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;
+}
+.admin-form button:hover, .admin-login button:hover { background-color: #0056b3; }
+#loginSection { text-align: center; }
+#adminContent { display: none; } /* Initially hide admin content */
+#editArea { margin-top: 2rem; border-top: 1px solid var(--card-border); padding-top: 1.5rem;}
+#movieList li { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--card-border); }
+#movieList button { margin-left: 0.5rem; padding: 0.2rem 0.5rem; font-size: 0.8em; }
+.edit-btn { background-color: #ffc107; color: #333; }
+.delete-btn { background-color: #dc3545; color: white; }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .movie-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+    .category-filters { font-size: 0.9em; gap: 0.3rem; }
+    .category-button, .category-filters a.category-button { padding: 0.5rem 0.8rem; }
+    .movie-details-container { flex-direction: column; padding: 1rem;} /* Stack on mobile */
+    .movie-details-container img.details-poster { max-width: 200px; }
+}
+
+@media (max-width: 480px) {
+    .movie-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    h1 { font-size: 1.5rem; }
+    #searchBox { width: 95%; }
+    .download-buttons { flex-direction: column; align-items: stretch; } /* Stack download buttons */
+}
+
+@media (min-width: 769px) { /* Side-by-side on larger screens */
+   .movie-details-container {
+       flex-direction: row;
+   }
+    .movie-details-container img.details-poster {
+       margin: 0; /* Align left */
+       align-self: flex-start; /* Keep poster at top */
+   }
+}
